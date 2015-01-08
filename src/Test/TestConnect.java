@@ -26,7 +26,7 @@ static Connect connect;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		connect = new Connect();
+	//	connect = new Connect();
 	}
 
 

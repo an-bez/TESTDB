@@ -1,6 +1,7 @@
 package Code;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import com.ibm.db2.jcc.am.ResultSet;
 
@@ -18,6 +19,27 @@ public static void printResult (java.sql.ResultSet result) throws SQLException {
 			}
 			System.out.print("\n");	
 			}
+		}
+
+public static void saveResult(java.sql.ResultSet result) throws SQLException {
+	
+	java.sql.ResultSetMetaData rsmd = result.getMetaData();
+	ArrayList<String> resultArray = new ArrayList<String>();
+	
+	while(result.next()){
+		
+		for (int i=1; i<=rsmd.getColumnCount(); i++){
 			
+			resultArray.add(i-1,result.getString(i));
+			
+		}
+
 	}
+	
+	System.out.print("Writed");
+	
+
+
+
+}
 }
