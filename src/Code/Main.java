@@ -18,16 +18,13 @@ import javax.swing.JOptionPane;
 			
 			Connect connect = new Connect();
 
-			System.out.print("1) Select and show"+"\n"+
-							 "2) Insert"+"\n"+
-							 "3) Select and write into the file"+"\n"+
+			System.out.print("[1] Select and show"+"\t"+
+							 "[2] Insert"+"\t"+
+							 "[3] Select and write into the file"+"\n"+
 							 "Choose the function: ");
 			
-			
-			
+
 			String choose = bufferRead.readLine();
-			
-			
 			
 			switch(choose){
 			

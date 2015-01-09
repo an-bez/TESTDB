@@ -46,7 +46,7 @@ public class Connect {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("Connected");
+		System.out.println("<---Connected--->");
 	return connection;
 	}
 	

@@ -37,9 +37,6 @@ public static void saveResult(java.sql.ResultSet result) throws SQLException {
 	}
 	
 	System.out.print("Writed");
-	
 
-
-
-}
+	}
 }
